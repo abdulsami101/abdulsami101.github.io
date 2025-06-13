@@ -1,0 +1,139 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <div class="pub-category">
+          <h2 class="pub-category-title">📂 {{ category[1].title }}</h2>
+          <hr class="pub-divider" />
+        </div>
+        {% assign title_shown = true %}
+      {% endunless %}
+      <div class="pub-entry">
+        <div class="pub-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="pub-meta">
+          <span class="pub-venue">{{ post.venue }}</span> · <span class="pub-date">{{ post.date | date: "%B %Y" }}</span>
+        </div>
+        {% if post.excerpt %}<p class="pub-excerpt">{{ post.excerpt }}</p>{% endif %}
+        <div class="pub-links">
+          {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-btn" target="_blank">📄 Paper</a>{% endif %}
+          {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-btn" target="_blank">🎤 Slides</a>{% endif %}
+          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="pub-btn" target="_blank">📚 BibTeX</a>{% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    <div class="pub-entry">
+      <div class="pub-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+      <div class="pub-meta">
+        <span class="pub-venue">{{ post.venue }}</span> · <span class="pub-date">{{ post.date | date: "%B %Y" }}</span>
+      </div>
+      {% if post.excerpt %}<p class="pub-excerpt">{{ post.excerpt }}</p>{% endif %}
+      <div class="pub-links">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-btn" target="_blank">📄 Paper</a>{% endif %}
+        {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-btn" target="_blank">🎤 Slides</a>{% endif %}
+        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="pub-btn" target="_blank">📚 BibTeX</a>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}
+
+<style>
+.pub-entry {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.pub-title a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #004080;
+}
+.pub-title a:hover {
+  text-decoration: underline;
+}
+.pub-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+.pub-excerpt {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.pub-links .pub-btn {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
+}
+.pub-links .pub-btn:hover {
+  background-color: #005fa3;
+}
+.pub-divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 1rem 0;
+}
+.pub-category-title {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+/* Hover effect for publication card */
+.pub-entry:hover {
+  background-color: #f0f8ff;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+  border-color: #c0e0ff;
+  box-shadow: 0 4px 10px rgba(0, 120, 200, 0.1);
+}
+
+/* Title hover already exists, but you can enhance it */
+.pub-title a:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+/* Button hover is already defined — you can make it pop a bit more */
+.pub-links .pub-btn:hover {
+  background-color: #004d80;
+  transform: scale(1.05);
+}
+
+</style>

@@ -1,0 +1,80 @@
+---
+layout: archive
+title: "🧩 Portfolio"
+permalink: /portfolio/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="portfolio-grid">
+  {% for post in site.portfolio %}
+    <div class="portfolio-card">
+      <a href="{{ post.url | relative_url }}">
+        {% if post.excerpt contains '<img' %}
+          <div class="portfolio-thumb">
+            {{ post.excerpt | markdownify }}
+          </div>
+        {% endif %}
+        <div class="portfolio-info">
+          <h3 class="portfolio-title">{{ post.title }}</h3>
+          <p class="portfolio-desc">{{ post.excerpt | strip_html }}</p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.portfolio-card {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-color: #aad4ff;
+}
+
+.portfolio-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.portfolio-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-info {
+  padding: 1rem;
+}
+
+.portfolio-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #005fa3;
+}
+
+.portfolio-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+</style>

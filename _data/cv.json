@@ -1,0 +1,191 @@
+{
+  "basics": {
+    "name": "Abdul Sami",
+    "label": "Machine-Learning Researcher",
+    "email": "abdulsamimahar001@gmail.com",
+    "phone": "+82-10-6772-9532",
+    "website": "https://abdulsami101.github.io",
+    "summary": "Motivated machine learning researcher with a solid foundation in deep learning and generative modeling. Currently specializing in Diffusion Models for image generation, with a strong focus on computer vision and real-world AI applications. Passionate about advancing multimodal generative systems and contributing to impactful, cutting-edge research",
+    "location": {
+      "city": "Seoul",
+      "region": "South Korea",
+      "countryCode": "KR"
+    },
+    "profiles": [
+      { "network": "Google Scholar", "username": "YSI0Su4AAAAJ", "url": "https://scholar.google.com/citations?user=YSI0Su4AAAAJ" },
+      { "network": "GitHub",        "username": "abdulsami101",           "url": "https://github.com/abdulsami101" },
+      { "network": "LinkedIn",      "username": "abdul-sami-306339178",    "url": "https://www.linkedin.com/in/abdul-sami-306339178/" }
+    ]
+  },
+
+  "work": [
+    {
+      "name": "System Software Lab, Soongsil University",
+      "position": "Research Assistant",
+      "url": "https://ss.ssu.ac.kr/",
+      "startDate": "2023-09",
+       "summary": " ",
+      "highlights": [
+        "Conducting advanced research in machine learning and generative modeling, with a focus on diffusion models for image generation and font synthesis.",
+        "Developed a novel few-shot conditional diffusion pipeline for structurally accurate multilingual font generation across Korean, Chinese, and English scripts..",
+        "Trained and evaluated YOLOv8 models for object detection; supported experiments in image segmentation and classification tasks.",
+        "Contributed to multiple publications: one accepted at an international conference (ICOIN 2025), one journal paper under final review, and another in preparation.",
+        "Built and fine-tuned models using PyTorch, incorporating VGG-based feature extraction, CLIP embeddings, OpenCV processing, and reference-style input conditioning.",
+        "Led dataset preparation, model training, and metric-driven evaluation (SSIM, LPIPS, FID) for font generation and vision-related projects.",
+        "Actively collaborated in a fast-paced research environment exploring LLM integration and multimodal generative AI systems."
+
+      ]
+    },
+    {
+      "name": "Soongsil University",
+      "position": "Teaching Assistant - Artificial Intelligence & Deep Learning",
+      "url": "https://www.ssu.ac.kr/",
+      "startDate": "2024-03",
+     
+      "highlights": [
+        "Supporting graduate-level courses in Artificial Intelligence and Deep Learning for Master’s students.",
+        "Conducting hands-on coding tutorials and lab sessions focused on neural networks, CNNs, and modern deep learning frameworks (e.g., PyTorch).",
+        "Delivering occasional lectures and assisting with conceptual understanding of key topics in generative models and  applied AI.",
+        "Designing mid-term and final exams, grading assignments, and providing one-on-one academic guidance to students"
+
+      ] 
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Soongsil University",
+      "area": "M.Sc. Computer Science",
+      "startDate": "2023-09",
+      "endDate": "2025-08",
+      "gpa": "4.16/4.5",
+      "location": "Seoul, South Korea"
+    },
+    {
+      "institution": "Mehran University of Engineering & Technology – SZAB Campus",
+      "area": "B.E. Software Engineering",
+      "startDate": "2018-11",
+      "endDate": "2022-12",
+      "gpa": "3.73/4.0",
+      "location": "Khairpur Mir’s, Pakistan"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "DK-Font: Diffusion-Based Multilingual Font Generation",
+      "description": "Novel diffusion model with phonetic-aware encoding, multi-reference style learning and iterative correction for high-fidelity font sets.",
+      "keywords": ["Diffusion Models","U-Net","ResNet","VGG","Few-Shot Learning"],
+      "startDate": "2024-02",
+      "url": "https://github.com/abdulsami101"
+    },
+    {
+      "name": "Hangul Classifier",
+      "description": "Deep-CNN classifier (AlexNet) achieving 95 %+ accuracy across diverse Korean font styles.",
+      "keywords": ["PyTorch","Computer Vision"],
+      "startDate": "2023-07"
+    },
+    {
+      "name": "Real-Time Face-Recognition Attendance System",
+      "description": "Desktop application that detects faces in live video and auto-records attendance.",
+      "keywords": ["OpenCV","Face Recognition","SQLite"],
+      "startDate": "2022-05"
+    }
+  ],
+
+  "publications": [
+    {
+      "name": "Text-Conditioned Diffusion Model for High-Fidelity Korean Font Generation",
+      "publisher": "ICOIN 2025",
+      "releaseDate": "2025-01",
+      "location": "Chiang Mai, Thailand",
+      "summary": "Conference paper presenting a text-guided diffusion approach for Korean fonts.",
+      "website": "https://ieeexplore.ieee.org/abstract/document/10992882"
+    },
+    {
+      "name": "Ckfont3: Component-Based Korean Font Generation Using Positional-Aware Decomposition",
+      "publisher": "Journal of Visual Communication and Image Representation (under review)",
+      "releaseDate": "2024-11",
+      "summary": "Manuscript on component-level font synthesis.",
+      "website": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5030035"
+    
+    },
+    {
+      "name": "Diffusion-Driven Multilingual Font Generation with Structural Precision and Iterative Refinement",
+      "publisher": "Target journal TBA (in preparation)",
+      "releaseDate": "2025-06",
+      "summary": "Proposed a unified diffusion-based framework for multilingual font generation, introducing Multi-Scale Style Infusion for fine-grained style control, Structural Consistency Loss for stroke preservation, and CLIP-based Style Loss to enhance style transfer fidelity.",
+      "website": ""
+    },
+    {
+      "name": "Disentangled Diffusion for Multilingual Character Generation",
+      "publisher": "Master’s Thesis, Soongsil University",
+      "releaseDate": "2025-08",
+      "summary": "This thesis focuses on image generation of multilingual characters using diffusion models. By disentangling content and style, the model generates visually consistent and structurally accurate character images across different writing systems..",
+      "website": ""
+    }
+
+  ],
+
+  "skills": [
+    { "name": "Programming",  "keywords": ["Python","Java","C++","JavaScript","LaTeX"] },
+    { "name": "Deep Learning","keywords": ["PyTorch","TensorFlow","HuggingFace","Weights & Biases"] },
+    { "name": "Generative AI","keywords": ["Diffusion Models","GANs","VAEs","CLIP","UNet","ResNet","VGG"] },
+    { "name": "Computer Vision","keywords": ["YOLOv8","Segmentation","Sobel","Feature Matching"] },
+    { "name": "ML Workflow",   "keywords": ["Data Prep","SSIM","LPIPS","FID","Perceptual Loss"] },
+    { "name": "Cloud & DevOps", "keywords": ["GCP Vertex AI","Docker","Linux","Colab","Kaggle"] },
+    { "name": "Tools",         "keywords": ["NumPy","SciPy","Pandas","Matplotlib","SPSS"] }
+  ],
+
+  "awards": [
+    {
+      "title": "Full Master’s Scholarship",
+      "date": "2023-09",
+      "awarder": "Soongsil University",
+      "summary": "Merit-based tuition waiver plus stipend for top international graduate students."
+    },
+    {
+      "title": "Google Cloud Study Jam – Swag Award",
+      "date": "2025-02",
+      "awarder": "Google Developers Korea"
+    },
+    {
+      "title": "Undergraduate Merit Award",
+      "date": "2023-01",
+      "awarder": "Mehran University of Engineering & Technology"
+    }
+  ],
+
+  "certificates": [
+    { "name": "Introduction to Machine Learning" },
+    { "name": "Elements of Data Science" },
+    { "name": "Cisco Certified Network Associate (CCNA) Training" },
+    { "name": "Cyber Security Essentials" },
+    { "name": "Robotic Process Automation" }
+  ],
+
+  "languages": [
+    { "language": "English", "fluency": "Fluent" },
+    { "language": "Urdu",    "fluency": "Fluent" },
+    { "language": "Sindhi",  "fluency": "Native" },
+    { "language": "Korean",  "fluency": "Intermediate" }
+  ],
+
+  "interests": [
+    { "name": "Human-Centered AI" },
+    { "name": "Cultural Exchange" },
+    { "name": "Language Learning" },
+    { "name": "Traveling" }
+  ],
+
+  "references": [
+    {
+      "name": "Prof. Jaeyoung Choi",
+      "reference": "Professor & Thesis Advisor, Soongsil University – choi@ssu.ac.kr, +82-10-3311-0684"
+    },
+    {
+      "name": "Prof. Jongsun Choi",
+      "reference": "Associate Professor, Soongsil University – jongsun.choi@ssu.ac.kr"
+    }
+  ]
+}
