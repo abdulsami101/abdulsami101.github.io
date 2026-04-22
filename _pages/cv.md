@@ -11,54 +11,59 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **M.S. in Computer Science**, Soongsil University, Seoul, South Korea *(Expected Aug 2025)*
+  * GPA: 4.16 / 4.5
+  * Researcher at System Software Lab under Prof. Jaeyong Choi
+  * Thesis: *Diffusion-Driven Image Generation with Disentangled Style and Structure-Aware Fidelity*
+* **B.E. in Software Engineering**, Mehran University of Engineering and Technology, Pakistan *(2018–2023)*
+  * GPA: 3.73 / 4.0
+  * Graduated as the top student in the class
+  * Final Year Project: Real-Time Face Recognition Attendance System Using Computer Vision
 
-Work experience
+Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Graduate Researcher**, System Software Lab, Soongsil University *(Sep 2023 – Present)*
+  * Developing diffusion-based generative models for multilingual font synthesis (Korean, Chinese, Latin).
+  * Designing multi-scale style injection, CLIP-guided losses, and Sobel structural constraints.
+  * Published at ICOIN 2025; extended work under journal review at MDPI Electronics.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Teaching Assistant**, Soongsil University *(Fall 2023)*
+  * Supported the "Deep Learning Programming" graduate course.
+  * Prepared lab materials on PyTorch, CNNs, and model evaluation.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* **Visiting Lecturer**, KOICA Programme, Soongsil University *(Sep 2024)*
+  * Delivered fast-track ML/AI module for KOICA scholars: ML basics, deep-learning labs, CV & diffusion demos, AI ethics.
+  * Mentored capstone teams to deploy real-world ML solutions.
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Deep Learning Frameworks:** PyTorch, TensorFlow, Keras
+* **Languages:** Python (fluent), C++ (basic), HTML/CSS
+* **ML Tools:** HuggingFace Diffusers, VGG Feature Extractors, OpenCV, NumPy
+* **Model Types:** Diffusion Models, GANs, Style Encoders, CNNs
+* **Data Tools:** Pandas, Matplotlib, Jupyter, Weights & Biases
+* **Other Tools:** Git, Docker, Linux, LaTeX
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
+    {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
+
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+
+Awards & Honors
 ======
-* Currently signed in to 43 different slack teams
+* Top graduating student — B.E. Software Engineering, Mehran University (2023)
+* ICOIN 2025 — Accepted conference paper on diffusion-based Korean font generation
+* MDPI Electronics — Journal paper accepted on positional-component-guided Hangul generation (2025)

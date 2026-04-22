@@ -8,7 +8,7 @@ collection: portfolio
 
 ---
 title: "Korean Font Generation"
-excerpt: "A multilingual font generation project using diffusion models, focusing on Korean characters and style transfer.<br/><img src='/images/korean.png'>"
+excerpt: "A multilingual font generation project using diffusion models, focusing on Korean characters and style transfer.<br/><img src='/images/korean.PNG'>"
 collection: portfolio
 ---
 
@@ -19,5 +19,5 @@ This project explores the use of advanced generative models—specifically diffu
 - Multiscale style injection and CLIP-guided loss integration.
 - Structural consistency enforced via Sobel-edge loss.
 
-🔗 _[View code on GitHub](https://github.com/your-username/your-repo)_  
+🔗 _[View code on GitHub](https://github.com/abdulsami101/DK-Font)_  
 📝 _Published at ICOIN 2025, extended for journal submission._
