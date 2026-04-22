@@ -5,9 +5,11 @@ permalink: /portfolio/
 author_profile: true
 ---
 
+<link rel="stylesheet" href="{{ "/assets/css/cv-style.css" | relative_url }}">
+
 {% include base_path %}
 
-Welcome to my project showcase! Below you’ll find a selection of my research work, hands-on experiments, and generative model projects. These highlight my passion for computer vision, AI, and creative applications of deep learning.
+Welcome to my project showcase! Below you'll find a selection of my research work, hands-on experiments, and generative model projects. These highlight my passion for computer vision, AI, and creative applications of deep learning.
 
 <div class="portfolio-grid">
   {% for post in site.portfolio %}
@@ -26,57 +28,3 @@ Welcome to my project showcase! Below you’ll find a selection of my research w
     </div>
   {% endfor %}
 </div>
-
-<style>
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.portfolio-card {
-  background: #fff;
-  border: 1px solid #e2e2e2;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.portfolio-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  border-color: #66aaff;
-}
-
-.portfolio-card a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  height: 100%;
-}
-
-.portfolio-thumb img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.portfolio-info {
-  padding: 1rem;
-}
-
-.portfolio-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-  color: #004b87;
-}
-
-.portfolio-desc {
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.5;
-}
-</style>

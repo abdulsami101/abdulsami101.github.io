@@ -1,15 +1,17 @@
 ---
-title: "Korean Font Generation"
-excerpt: "A multilingual font generation project using diffusion models, focusing on Korean characters and style transfer.<br/><img src='/images/korean.png'>"
+title: "Unified Diffusion Model with Multi-Scale Style Infusion"
+excerpt: "An enhanced diffusion-based font generation framework with unified single-phase training, multi-scale style injection, and structure-aware losses across multilingual scripts.<br/><img src='/images/korean.PNG'>"
 collection: portfolio
 ---
 
-This project explores the use of advanced generative models—specifically diffusion models—for generating high-quality Korean fonts. The goal is to produce structurally consistent and stylistically accurate font images by learning from both printed and handwritten samples.
+This project develops an improved diffusion-based font generation framework that addresses limitations of two-stage pipelines by unifying training into a single phase. The model simultaneously learns style representation and structural generation, enabling more coherent and efficient font synthesis.
 
 **Key Highlights:**
-- Few-shot learning for unseen character generation.
-- Multiscale style injection and CLIP-guided loss integration.
-- Structural consistency enforced via Sobel-edge loss.
+- Multi-Scale Style Infusion: style vectors injected at encoder, bottleneck, and decoder stages of the U-Net.
+- Sobel-based structural consistency loss to enforce stroke-level fidelity during denoising.
+- CLIP-based style loss for perceptual alignment between reference and generated glyphs.
+- Supports Korean, Chinese, and Latin script generation from minimal reference samples.
+- Designed for high-fidelity, structure-aware font synthesis across multilingual scripts.
 
-🔗 _[View code on GitHub](https://github.com/your-username/your-repo)_  
-📝 _Published at ICOIN 2025, extended for journal submission._
+🔗 _Code coming soon — research ongoing._  
+📝 _Extended journal manuscript in preparation._
