@@ -8,39 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-<style>
-  .homepage-section {
-    margin-bottom: 3rem;
-  }
-  .homepage-section h2 {
-    border-left: 4px solid #2a7ae2;
-    padding-left: 1rem;
-    font-size: 1.5rem;
-    color: #2a7ae2;
-    margin-bottom: 1rem;
-  }
-  .homepage-section p,
-  .homepage-section li {
-    text-align: justify;
-  }
-  .homepage-section ul {
-    padding-left: 1.5rem;
-  }
-  .date-inline {
-    font-style: italic;
-    color: #666;
-    font-size: 0.9rem;
-  }
-  .back-to-top {
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #2a7ae2;
-  }
-</style>
+<link rel="stylesheet" href="{{ base_path }}/assets/css/cv-style.css">
 
 # 👋 Hi, I'm Abdul Sami
 
+[Achievements](#achievements) |
 [Education](#education) |
 [Research Interests](#research) |
 [Projects & Publications](#publications) |
@@ -50,6 +22,19 @@ redirect_from:
 
 <div class="homepage-section">
 <p>I am a dedicated Machine Learning researcher with a focus on generative models, including expertise in GANs, VAEs, and Diffusion Models. My current work is centered on advancing Diffusion Models to generate high-quality images, and I’m expanding my expertise in Large Language Models (LLMs) to explore the dynamic intersection of vision and language. Currently, I’m completing my Master’s in Computer Science at Soongsil University, Seoul, under the guidance of <a href="https://scholar.google.com/citations?user=YJ7fWWgAAAAJ&hl=en">Prof. Jaeyong Choi</a>. I am passionate about generative AI, computer vision, and building models that push the boundaries of creativity.</p>
+</div>
+
+<a name="achievements"></a>
+<div class="homepage-section">
+<h2>🏆 Selected Achievements</h2>
+<ul>
+  <li>📄 <strong>2 peer-reviewed publications</strong> — ICOIN 2025 (IEEE) & MDPI Electronics (2025)</li>
+  <li>🎓 <strong>M.S. GPA: 4.16 / 4.5</strong> at Soongsil University, Seoul</li>
+  <li>🥇 <strong>Top graduating student</strong> — B.E. Software Engineering, Mehran University (2023), GPA: 3.73 / 4.0</li>
+  <li>📊 <strong>SOTA results</strong> on DK-Font: SSIM 0.857, FID 10.45, surpassing Diff-Font and MX-Font</li>
+  <li>🌏 <strong>Multilingual font generation</strong> across Korean, Chinese, and Latin scripts from 3–5 reference glyphs</li>
+</ul>
+<a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
 </div>
 
 <a name="education"></a>
@@ -153,11 +138,12 @@ Tools: PyTorch, AlexNet, torchvision</p>
 <h2>🔗 Get in Touch</h2>
 <ul>
   <li>📧 Email: abdulsamimahar001@gmail.com</li>
-  <li>🌐 Portfolio: <a href="https://abdulsami101.github.io">abdulsami101.github.io</a> (Coming Soon)</li>
+  <li>🌐 Portfolio: <a href="https://abdulsami101.github.io">abdulsami101.github.io</a></li>
   <li>📍 Based in Seoul, South Korea</li>
   <li>💼 Open to PhD opportunities in Europe (Fall 2025)</li>
 </ul>
 <br>
 <p>💡 I'm open to collaborations in generative AI and creative deep learning applications. Whether you're working on a new idea, looking for a partner in research, or just curious about fonts and image generation — let’s connect!</p>
+<p>🎯 <strong>Actively seeking PhD positions starting Fall 2025</strong> in Computer Vision, Generative Models, and Multilingual AI. Open to research collaborations and industry roles in generative AI.</p>
 <a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
 </div>
