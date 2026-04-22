@@ -8,7 +8,7 @@ collection: portfolio
 
 ---
 title: "Korean Font Generation"
-excerpt: "A multilingual font generation project using diffusion models, focusing on Korean characters and style transfer.<br/><img src='/images/korean.png'>"
+excerpt: "A multilingual font generation project using diffusion models, focusing on Korean characters and style transfer.<br/><img src='/images/korean.PNG'>"
 collection: portfolio
 ---
 
