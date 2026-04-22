@@ -22,6 +22,10 @@ Education
 
 Research Experience
 ======
+* **AI Engineer**, DeltaX, South Korea *(Dec 2025 – Present)*
+  * Working mainly on computer vision systems for autonomous vehicles.
+  * Developing and improving perception pipelines for real-world driving scenarios.
+
 * **Graduate Researcher**, System Software Lab, Soongsil University *(Sep 2023 – Present)*
   * Developing diffusion-based generative models for multilingual font synthesis (Korean, Chinese, Latin).
   * Designing multi-scale style injection, CLIP-guided losses, and Sobel structural constraints.

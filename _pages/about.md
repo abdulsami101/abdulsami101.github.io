@@ -21,7 +21,7 @@ redirect_from:
 [Get in Touch](#contact)
 
 <div class="homepage-section">
-<p>I am a dedicated Machine Learning researcher with a focus on generative models, including expertise in GANs, VAEs, and Diffusion Models. My current work is centered on advancing Diffusion Models to generate high-quality images, and I’m expanding my expertise in Large Language Models (LLMs) to explore the dynamic intersection of vision and language. Currently, I’m completing my Master’s in Computer Science at Soongsil University, Seoul, under the guidance of <a href="https://scholar.google.com/citations?user=YJ7fWWgAAAAJ&hl=en">Prof. Jaeyong Choi</a>. I am passionate about generative AI, computer vision, and building models that push the boundaries of creativity.</p>
+<p>I am a dedicated Machine Learning researcher with a focus on generative models, including expertise in GANs, VAEs, and Diffusion Models. My current work is centered on advancing Diffusion Models to generate high-quality images, and I’m expanding my expertise in Large Language Models (LLMs) to explore the dynamic intersection of vision and language. Currently, I’m completing my Master’s in Computer Science at Soongsil University, Seoul, under the guidance of <a href="https://scholar.google.com/citations?user=YJ7fWWgAAAAJ&hl=en">Prof. Jaeyong Choi</a>. Since Dec 1, 2025, I have been working as an AI Engineer at DeltaX (Korea), where I mainly work on computer vision for autonomous vehicles. I am passionate about generative AI, computer vision, and building models that push the boundaries of creativity.</p>
 </div>
 
 <a name="achievements"></a>
