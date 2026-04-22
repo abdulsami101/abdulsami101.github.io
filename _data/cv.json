@@ -20,6 +20,16 @@
 
   "work": [
     {
+      "name": "DeltaX",
+      "position": "AI Engineer",
+      "startDate": "2025-12-01",
+      "summary": "Working mainly on computer vision for autonomous vehicles.",
+      "highlights": [
+        "Developing and improving computer vision models for autonomous-driving perception tasks.",
+        "Supporting real-world autonomous-vehicle scenarios with robust vision pipelines."
+      ]
+    },
+    {
       "name": "System Software Lab, Soongsil University",
       "position": "Research Assistant",
       "url": "https://ss.ssu.ac.kr/",
