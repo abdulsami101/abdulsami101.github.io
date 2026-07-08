@@ -538,3 +538,77 @@
   color: #2a7ae2;
 }
 
+/* ==========================================================================
+   Dark mode overrides
+   The theme toggles dark mode via <html data-theme="dark"> (see assets/js/_main.js).
+   These rules keep the custom CV / homepage / card components readable in dark mode.
+   ========================================================================== */
+[data-theme="dark"] .cv-container {
+  color: #e6e6e6;
+}
+
+[data-theme="dark"] .cv-header {
+  border-bottom-color: #333;
+}
+
+[data-theme="dark"] .cv-header h1,
+[data-theme="dark"] .cv-section h2,
+[data-theme="dark"] .homepage-section h2,
+[data-theme="dark"] .cv-profile-item a,
+[data-theme="dark"] .talk-title,
+[data-theme="dark"] .teaching-title,
+[data-theme="dark"] .back-to-top {
+  color: #6ab0ff;
+}
+
+[data-theme="dark"] .cv-section h2,
+[data-theme="dark"] .cv-section h2 i,
+[data-theme="dark"] .cv-item-date,
+[data-theme="dark"] .cv-item-subtitle,
+[data-theme="dark"] .cv-language-fluency,
+[data-theme="dark"] .cv-references,
+[data-theme="dark"] .date-inline,
+[data-theme="dark"] .talk-date,
+[data-theme="dark"] .teaching-date {
+  border-bottom-color: #333;
+  color: #a8a8a8;
+}
+
+[data-theme="dark"] .cv-skill-category h3,
+[data-theme="dark"] .cv-interest h3 {
+  color: #e6e6e6;
+}
+
+[data-theme="dark"] .talk-meta,
+[data-theme="dark"] .teaching-meta,
+[data-theme="dark"] .talk-excerpt,
+[data-theme="dark"] .teaching-excerpt {
+  color: #c2c2c2;
+}
+
+/* Card surfaces */
+[data-theme="dark"] .talk-card,
+[data-theme="dark"] .teaching-card,
+[data-theme="dark"] .portfolio-card {
+  background-color: #1f2733;
+  border-color: #33415c;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* Chips / keyword pills */
+[data-theme="dark"] .cv-skill-keyword,
+[data-theme="dark"] .cv-interest-keyword {
+  background-color: #2a2f3a;
+  color: #e6e6e6;
+}
+
+[data-theme="dark"] .cv-project-keyword {
+  background-color: #1d3350;
+  color: #6ab0ff;
+}
+
+/* Callout boxes */
+[data-theme="dark"] .talkmap-link {
+  background: #1d2a44;
+}
+
