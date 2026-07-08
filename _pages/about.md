@@ -10,7 +10,18 @@ redirect_from:
 
 <link rel="stylesheet" href="{{ "/assets/css/cv-style.css" | relative_url }}">
 
-# 👋 Hi, I'm Abdul Sami Mahar 
+# 👋 Hi, I'm Abdul Sami 
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&width=700&lines=AI+Engineer+%40+DeltaX;Computer+Vision+%7C+Autonomous+Driving+%7C+In-Cabin+Monitoring;Edge+AI+%7C+Model+Quantization+%7C+Embedded+Deployment;Generative+Models+%26+Diffusion+Researcher" alt="AI Engineer at DeltaX — Computer Vision, Autonomous Driving, In-Cabin Monitoring, Edge AI, Generative Diffusion Researcher" />
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/abdul-sami-306339178/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:abdulsamimahar001@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://scholar.google.com/citations?user=YSI0Su4AAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar"/></a>
+  <a href="https://abdulsami101.github.io/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"/></a>
+</p>
 
 <div class="homepage-section">
 <p class="tagline"><strong>AI Engineer @ DeltaX</strong> — building perception systems for <strong>autonomous driving</strong> and <strong>in-cabin monitoring</strong>.<br>
