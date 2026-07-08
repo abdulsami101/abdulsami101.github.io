@@ -37,9 +37,7 @@ Generative Models & Diffusion researcher (M.S., Soongsil University 🇰🇷)</p
 [Core Competencies](#competencies) |
 [Edge AI](#edge-ai) |
 [Publications](#publications) |
-[Benchmarks](#benchmarks) |
 [Projects](#projects) |
-[Featured Results](#gallery) |
 [Technical Skills](#skills) |
 [Talks & Teaching](#teaching) |
 [Get in Touch](#contact)
@@ -47,44 +45,6 @@ Generative Models & Diffusion researcher (M.S., Soongsil University 🇰🇷)</p
 <div class="homepage-section">
 <p>I am a Machine Learning researcher and AI Engineer working at the intersection of computer vision, generative modeling, and edge deployment. My research focuses on Diffusion Models and GANs for high-quality image generation, and I completed my Master’s in Computer Science at Soongsil University, Seoul, under the guidance of <a href="https://scholar.google.com/citations?user=YJ7fWWgAAAAJ&hl=en">Prof. Jaeyong Choi</a>. Since December 2025, I have been an AI Engineer at DeltaX (Korea), where I build perception systems for autonomous driving and in-cabin monitoring — taking models all the way from training in PyTorch to quantized artifacts running on embedded automotive hardware. I am passionate about generative AI, computer vision, and bringing models from research into real-world deployment.</p>
 </div>
-
-<div class="homepage-section">
-<div class="stats-grid">
-  <div class="stat-card"><div class="stat-number" data-target="4">0</div><div class="stat-label">Peer-Reviewed Publications</div></div>
-  <div class="stat-card"><div class="stat-number" data-target="3">0</div><div class="stat-label">Scripts Supported (KR · CN · Latin)</div></div>
-  <div class="stat-card"><div class="stat-number" data-target="0.857" data-decimals="3">0</div><div class="stat-label">Best SSIM (DK-Font)</div></div>
-  <div class="stat-card"><div class="stat-number" data-target="10.45" data-decimals="2">0</div><div class="stat-label">Best FID (DK-Font)</div></div>
-</div>
-</div>
-
-<script>
-(function () {
-  function animate(el) {
-    var target = parseFloat(el.getAttribute('data-target'));
-    var decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
-    var duration = 1400, start = null;
-    function step(ts) {
-      if (!start) start = ts;
-      var p = Math.min((ts - start) / duration, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = (target * eased).toFixed(decimals);
-      if (p < 1) { requestAnimationFrame(step); } else { el.textContent = target.toFixed(decimals); }
-    }
-    requestAnimationFrame(step);
-  }
-  var nums = document.querySelectorAll('.stat-number');
-  if ('IntersectionObserver' in window) {
-    var obs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { animate(e.target); obs.unobserve(e.target); }
-      });
-    }, { threshold: 0.4 });
-    nums.forEach(function (n) { obs.observe(n); });
-  } else {
-    nums.forEach(animate);
-  }
-})();
-</script>
 
 <a name="current-role"></a>
 <div class="homepage-section">
@@ -195,26 +155,6 @@ Generative Models & Diffusion researcher (M.S., Soongsil University 🇰🇷)</p
 <a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
 </div>
 
-<a name="benchmarks"></a>
-<div class="homepage-section">
-<h2>📊 Benchmark Results</h2>
-<p>DK-Font vs. prior state-of-the-art on multilingual font generation <span class="date-inline">(higher SSIM is better; lower FID / LPIPS is better)</span>:</p>
-<div class="results-table-wrap">
-<table class="results-table">
-  <thead>
-    <tr><th>Method</th><th>SSIM ↑</th><th>FID ↓</th><th>LPIPS ↓</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>MX-Font</td><td>—</td><td>—</td><td>—</td></tr>
-    <tr><td>Diff-Font</td><td>—</td><td>—</td><td>—</td></tr>
-    <tr class="is-ours"><td>DK-Font (Ours)</td><td>0.857</td><td>10.45</td><td>—</td></tr>
-  </tbody>
-</table>
-</div>
-<p class="results-note">Tip: replace the “—” cells with the exact competitor numbers (and DK-Font LPIPS) from your paper to complete the comparison.</p>
-<a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
-</div>
-
 <a name="projects"></a>
 <div class="homepage-section">
 <h2>🛠️ Projects</h2>
@@ -255,47 +195,9 @@ Tools: PyTorch, AlexNet, torchvision</p>
 <a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
 </div>
 
-<a name="gallery"></a>
-<div class="homepage-section">
-<h2>🖼️ Featured Results</h2>
-<p>Visual samples from my generative and vision work. <span class="date-inline">(Placeholder images — drop your real result PNGs/GIFs into <code>/images/</code> and update the <code>src</code> paths below.)</span></p>
-<div class="results-gallery">
-  <div class="result-card">
-    <img src="{{ '/images/500x300.png' | relative_url }}" alt="Generated multilingual fonts">
-    <div class="result-caption"><strong>Multilingual Font Generation</strong><span>KR · CN · Latin glyphs synthesized from 3–5 references.</span></div>
-  </div>
-  <div class="result-card">
-    <img src="{{ '/images/500x300.png' | relative_url }}" alt="Diffusion denoising process">
-    <div class="result-caption"><strong>Diffusion Denoising</strong><span>Noise → clean glyph across reverse sampling steps.</span></div>
-  </div>
-  <div class="result-card">
-    <img src="{{ '/images/500x300.png' | relative_url }}" alt="Style transfer comparison">
-    <div class="result-caption"><strong>Style Transfer</strong><span>Reference style faithfully applied to unseen characters.</span></div>
-  </div>
-  <div class="result-card">
-    <img src="{{ '/images/500x300.png' | relative_url }}" alt="In-cabin monitoring detection">
-    <div class="result-caption"><strong>In-Cabin Monitoring (DMS)</strong><span>Occupant &amp; safety detection on embedded hardware.</span></div>
-  </div>
-</div>
-<a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
-</div>
-
 <a name="skills"></a>
 <div class="homepage-section">
 <h2>💻 Technical Skills</h2>
-<div class="tech-wall">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
-  <img src="https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white" alt="ONNX">
-  <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA">
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face">
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
-  <img src="https://img.shields.io/badge/Weights%20%26%20Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black" alt="Weights & Biases">
-</div>
 <ul>
   <li><strong>Deep Learning Frameworks:</strong> PyTorch, TensorFlow, Keras</li>
   <li><strong>Languages:</strong> Python (fluent), C++ (basic), HTML/CSS (for fun)</li>
