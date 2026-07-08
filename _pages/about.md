@@ -10,7 +10,7 @@ redirect_from:
 
 <link rel="stylesheet" href="{{ "/assets/css/cv-style.css" | relative_url }}">
 
-# 👋 Hi, I'm Abdul Sami
+# 👋 Hi, I'm Abdul Sami Mahar 
 
 [Achievements](#achievements) |
 [Education](#education) |
