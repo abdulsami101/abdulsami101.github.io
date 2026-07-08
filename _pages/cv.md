@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* **M.S. in Computer Science**, Soongsil University, Seoul, South Korea *(Expected Aug 2025)*
+* **M.S. in Computer Science**, Soongsil University, Seoul, South Korea *(2023–2025)*
   * GPA: 4.16 / 4.5
   * Researcher at System Software Lab under Prof. Jaeyong Choi
   * Thesis: *Diffusion-Driven Image Generation with Disentangled Style and Structure-Aware Fidelity*
