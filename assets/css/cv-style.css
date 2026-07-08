@@ -508,6 +508,16 @@
   margin-bottom: 3rem;
 }
 
+.tagline {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #2a7ae2;
+  background: #f5f9ff;
+  border-radius: 6px;
+  text-align: left !important;
+}
+
 .homepage-section h2 {
   border-left: 4px solid #2a7ae2;
   padding-left: 1rem;
@@ -610,5 +620,10 @@
 /* Callout boxes */
 [data-theme="dark"] .talkmap-link {
   background: #1d2a44;
+}
+
+[data-theme="dark"] .tagline {
+  background: #1d2a44;
+  border-left-color: #6ab0ff;
 }
 

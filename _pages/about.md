@@ -12,23 +12,48 @@ redirect_from:
 
 # 👋 Hi, I'm Abdul Sami Mahar 
 
+<div class="homepage-section">
+<p class="tagline"><strong>AI Engineer @ DeltaX</strong> — building perception systems for <strong>autonomous driving</strong> and <strong>in-cabin monitoring</strong>.<br>
+Computer Vision • Object Detection • Driver Monitoring Systems (DMS)<br>
+Edge AI — model <strong>quantization</strong>, <strong>ONNX conversion</strong>, and deployment to <strong>embedded devices</strong>.<br>
+Generative Models & Diffusion researcher (M.S., Soongsil University 🇰🇷)</p>
+</div>
+
+[Current Role](#current-role) |
 [Achievements](#achievements) |
 [Education](#education) |
 [Research Interests](#research) |
-[Projects & Publications](#publications) |
+[Core Competencies](#competencies) |
+[Edge AI](#edge-ai) |
+[Publications](#publications) |
+[Projects](#projects) |
 [Technical Skills](#skills) |
 [Talks & Teaching](#teaching) |
 [Get in Touch](#contact)
 
 <div class="homepage-section">
-<p>I am a dedicated Machine Learning researcher with a focus on generative models, including expertise in GANs, VAEs, and Diffusion Models. My work centers on advancing Diffusion Models to generate high-quality images, and I’m expanding my expertise in Large Language Models (LLMs) to explore the dynamic intersection of vision and language. I completed my Master’s in Computer Science at Soongsil University, Seoul, under the guidance of <a href="https://scholar.google.com/citations?user=YJ7fWWgAAAAJ&hl=en">Prof. Jaeyong Choi</a>. Since December 2025, I have been working as an AI Engineer at DeltaX (Korea), where I mainly work on computer vision for autonomous vehicles. I am passionate about generative AI, computer vision, and building models that push the boundaries of creativity.</p>
+<p>I am a Machine Learning researcher and AI Engineer working at the intersection of computer vision, generative modeling, and edge deployment. My research focuses on Diffusion Models and GANs for high-quality image generation, and I completed my Master’s in Computer Science at Soongsil University, Seoul, under the guidance of <a href="https://scholar.google.com/citations?user=YJ7fWWgAAAAJ&hl=en">Prof. Jaeyong Choi</a>. Since December 2025, I have been an AI Engineer at DeltaX (Korea), where I build perception systems for autonomous driving and in-cabin monitoring — taking models all the way from training in PyTorch to quantized artifacts running on embedded automotive hardware. I am passionate about generative AI, computer vision, and bringing models from research into real-world deployment.</p>
+</div>
+
+<a name="current-role"></a>
+<div class="homepage-section">
+<h2>💼 Current Role</h2>
+<p><strong>AI Engineer — DeltaX</strong> <span class="date-inline">(Dec 2025 – Present)</span></p>
+<ul>
+  <li><strong>Automotive AI:</strong> Engineering end-to-end computer vision pipelines and post-processing logic for next-generation smart vehicle In-Cabin Monitoring Systems (ICMS).</li>
+  <li><strong>In-Cabin Monitoring System (IMS/DMS):</strong> Developing high-accuracy AI features to detect seatbelt compliance, track driver distraction (looking away, phone use, or hands off the wheel), and ensure passenger safety (identifying adults, children, and pets).</li>
+  <li><strong>Edge Deployment:</strong> Converting deep learning models to run efficiently on embedded devices, including model quantization (INT8 / 16-bit) and optimization for real-time, low-power inference.</li>
+  <li><strong>Hardware/Software Bridge:</strong> Working across the ML + embedded system — from training in PyTorch to compiled artifacts on target automotive hardware.</li>
+</ul>
+<a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
 </div>
 
 <a name="achievements"></a>
 <div class="homepage-section">
 <h2>🏆 Selected Achievements</h2>
 <ul>
-  <li>📄 <strong>2 peer-reviewed publications</strong> — ICOIN 2025 (IEEE) & MDPI Electronics (2025)</li>
+  <li>📄 <strong>4 peer-reviewed publications</strong> — The Visual Computer (Springer), KSII TIIS, IEEE ICOIN 2025 & MDPI Electronics</li>
+  <li>🚗 <strong>Production automotive AI</strong> — in-cabin monitoring (DMS) pipelines deployed to embedded SoCs at DeltaX</li>
   <li>🎓 <strong>M.S. GPA: 4.16 / 4.5</strong> at Soongsil University, Seoul</li>
   <li>🥇 <strong>Top graduating student</strong> — B.E. Software Engineering, Mehran University (2023), GPA: 3.73 / 4.0</li>
   <li>📊 <strong>SOTA results</strong> on DK-Font: SSIM 0.857, FID 10.45, surpassing Diff-Font and MX-Font</li>
@@ -68,9 +93,60 @@ redirect_from:
 <a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
 </div>
 
+<a name="competencies"></a>
+<div class="homepage-section">
+<h2>🧩 Core Competencies & Domain Expertise</h2>
+<h3>🚗 Intelligent Vehicle Perception & Edge AI</h3>
+<ul>
+  <li><strong>Advanced In-Cabin Systems (ICMS):</strong> Architecting real-time vision pipelines for occupant detection, 3D body keypoints, gaze tracking, and safety compliance (seatbelt, HOD, phone-use, CPD).</li>
+  <li><strong>Hardware-Aware Optimization:</strong> Porting deep learning models to resource-constrained embedded automotive hardware via INT8 / FP16 post-training quantization and custom calibration.</li>
+  <li><strong>Target Runtime Compilation:</strong> End-to-end framework translation across the PyTorch → ONNX → TI TIDL pipeline for low-power, edge-accelerated inference.</li>
+</ul>
+<h3>🎨 Generative AI & Image-to-Image Synthesis</h3>
+<ul>
+  <li><strong>Image-to-Image (I2I) Translation:</strong> Designing deep learning architectures to translate, map, and transform visual content across completely different domains while preserving core structural integrity.</li>
+  <li><strong>Diffusion & GAN Architectures:</strong> Implementing state-of-the-art conditional diffusion models and Generative Adversarial Networks (GANs) for high-fidelity image generation, conditional synthesis, and advanced image editing.</li>
+  <li><strong>Synthetic Data Engineering:</strong> Developing automated pipelines utilizing foundation models (SAM) for high-fidelity image inpainting, synthetic data augmentation, and automated dataset annotation.</li>
+</ul>
+<a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
+</div>
+
+<a name="edge-ai"></a>
+<div class="homepage-section">
+<h2>⚙️ Edge AI & Model Optimization</h2>
+<p>I focus on taking models from research to <strong>real hardware</strong>:</p>
+<ul>
+  <li><strong>Model Conversion:</strong> PyTorch → ONNX → hardware-optimized artifacts.</li>
+  <li><strong>Quantization:</strong> Post-training quantization (INT8 / 16-bit) with calibration for minimal accuracy loss.</li>
+  <li><strong>Embedded Deployment:</strong> Compiling & benchmarking models for TI TDA4VM and similar SoCs (AM68A, AM69A, AM62A).</li>
+  <li><strong>Optimization:</strong> Inference-time tuning, memory-bandwidth reduction, and real-time latency / FPS benchmarking.</li>
+</ul>
+<a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
+</div>
+
 <a name="publications"></a>
 <div class="homepage-section">
-<h2>📚 Projects</h2>
+<h2>📚 Publications</h2>
+<ul>
+  <li><strong>Sami-Font: Structure and Style-Aware Multi-Scale Infusion for One-Shot Multilingual Typeface Generation</strong><br>
+  <em>First Author</em> — The Visual Computer (Springer)<br>
+  <a href="https://link.springer.com/article/10.1007/s00371-026-04631-7">Paper Link</a></li>
+  <li><strong>DML-Font: Multilingual Font Generation Based on Diffusion Model</strong><br>
+  <em>First Author</em> — KSII Transactions on Internet and Information Systems (TIIS)<br>
+  <a href="https://itiis.org/digital-library/107367">Paper Link</a></li>
+  <li><strong>Positional Component-Guided Hangul Font Image Generation via Deep Semantic Segmentation and Adversarial Style Transfer</strong><br>
+  <em>Third Author</em> — Electronics (MDPI)<br>
+  <a href="https://www.mdpi.com/2079-9292/14/13/2699">Paper Link</a></li>
+  <li><strong>Text-Conditioned Diffusion Model for High-Fidelity Korean Font Generation</strong><br>
+  <em>First Author</em> — IEEE (ICOIN 2025)<br>
+  <a href="https://ieeexplore.ieee.org/document/10992882">Paper Link</a></li>
+</ul>
+<a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
+</div>
+
+<a name="projects"></a>
+<div class="homepage-section">
+<h2>🛠️ Projects</h2>
 <p><strong>DK-Font: Diffusion-Driven Multilingual Font Generation with Phonetic Awareness and Iterative Refinement</strong><br>
 Abdul Sami, Jaeyong Choi<br>
 Tools: PyTorch, Diffusion Models, U‑Net, VGG‑19, ResNet, CLIP</p>
@@ -115,7 +191,8 @@ Tools: PyTorch, AlexNet, torchvision</p>
   <li><strong>Deep Learning Frameworks:</strong> PyTorch, TensorFlow, Keras</li>
   <li><strong>Languages:</strong> Python (fluent), C++ (basic), HTML/CSS (for fun)</li>
   <li><strong>ML Tools:</strong> HuggingFace Diffusers, VGG Feature Extractors, OpenCV, NumPy</li>
-  <li><strong>Model Types:</strong> Diffusion Models, GANs, Style Encoders, CNNs</li>
+  <li><strong>Model Types:</strong> Diffusion Models, GANs, Style Encoders, CNNs, Object Detectors</li>
+  <li><strong>Edge AI & Deployment:</strong> ONNX, TI TIDL, INT8 / FP16 Quantization, TDA4VM &amp; AM6xA SoCs, Embedded Inference</li>
   <li><strong>Data Tools:</strong> Pandas, Matplotlib, Jupyter, Weights & Biases</li>
   <li><strong>Other Tools:</strong> Git, Docker, Linux, LaTeX</li>
 </ul>
