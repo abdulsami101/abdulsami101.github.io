@@ -627,3 +627,201 @@
   border-left-color: #6ab0ff;
 }
 
+/* ==========================================================================
+   Stat counters
+   ========================================================================== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f5f9ff 0%, #eef3ff 100%);
+  border: 1px solid #e2ecff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(42, 122, 226, 0.15);
+}
+
+.stat-number {
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #2a7ae2;
+}
+
+.stat-number .stat-suffix {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+.stat-label {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Benchmark / results table
+   ========================================================================== */
+.results-table-wrap {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  min-width: 480px;
+}
+
+.results-table th,
+.results-table td {
+  padding: 0.7rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.results-table thead th {
+  background: #2a7ae2;
+  color: #fff;
+  font-weight: 600;
+}
+
+.results-table td:first-child,
+.results-table th:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+.results-table tr.is-ours {
+  background: #eaf3ff;
+}
+
+.results-table tr.is-ours td {
+  color: #16457a;
+  font-weight: 700;
+}
+
+.results-note {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* ==========================================================================
+   Featured results gallery
+   ========================================================================== */
+.results-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.result-card {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-color: #66aaff;
+}
+
+.result-card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #f2f2f2;
+}
+
+.result-caption {
+  padding: 0.9rem 1rem;
+}
+
+.result-caption strong {
+  display: block;
+  color: #2a7ae2;
+  margin-bottom: 0.25rem;
+}
+
+.result-caption span {
+  font-size: 0.88rem;
+  color: #666;
+}
+
+/* ==========================================================================
+   Tech logo wall
+   ========================================================================== */
+.tech-wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.tech-wall img {
+  height: 30px;
+}
+
+/* Dark-mode variants for the new components */
+[data-theme="dark"] .stat-card {
+  background: linear-gradient(135deg, #1f2733 0%, #1d2a44 100%);
+  border-color: #33415c;
+}
+
+[data-theme="dark"] .stat-number {
+  color: #6ab0ff;
+}
+
+[data-theme="dark"] .stat-label {
+  color: #b8b8b8;
+}
+
+[data-theme="dark"] .results-table th,
+[data-theme="dark"] .results-table td {
+  border-bottom-color: #33415c;
+}
+
+[data-theme="dark"] .results-table tr.is-ours {
+  background: #1d3350;
+}
+
+[data-theme="dark"] .results-table tr.is-ours td {
+  color: #cfe4ff;
+}
+
+[data-theme="dark"] .result-card {
+  background: #1f2733;
+  border-color: #33415c;
+}
+
+[data-theme="dark"] .result-caption strong {
+  color: #6ab0ff;
+}
+
+[data-theme="dark"] .result-caption span,
+[data-theme="dark"] .results-note {
+  color: #a8a8a8;
+}
+
+
