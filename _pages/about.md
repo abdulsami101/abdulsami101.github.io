@@ -21,7 +21,7 @@ redirect_from:
 [Get in Touch](#contact)
 
 <div class="homepage-section">
-<p>I am a dedicated Machine Learning researcher with a focus on generative models, including expertise in GANs, VAEs, and Diffusion Models. My current work is centered on advancing Diffusion Models to generate high-quality images, and I’m expanding my expertise in Large Language Models (LLMs) to explore the dynamic intersection of vision and language. Currently, I’m completing my Master’s in Computer Science at Soongsil University, Seoul, under the guidance of <a href="https://scholar.google.com/citations?user=YJ7fWWgAAAAJ&hl=en">Prof. Jaeyong Choi</a>. Since Dec 1, 2025, I have been working as an AI Engineer at DeltaX (Korea), where I mainly work on computer vision for autonomous vehicles. I am passionate about generative AI, computer vision, and building models that push the boundaries of creativity.</p>
+<p>I am a dedicated Machine Learning researcher with a focus on generative models, including expertise in GANs, VAEs, and Diffusion Models. My work centers on advancing Diffusion Models to generate high-quality images, and I’m expanding my expertise in Large Language Models (LLMs) to explore the dynamic intersection of vision and language. I completed my Master’s in Computer Science at Soongsil University, Seoul, under the guidance of <a href="https://scholar.google.com/citations?user=YJ7fWWgAAAAJ&hl=en">Prof. Jaeyong Choi</a>. Since December 2025, I have been working as an AI Engineer at DeltaX (Korea), where I mainly work on computer vision for autonomous vehicles. I am passionate about generative AI, computer vision, and building models that push the boundaries of creativity.</p>
 </div>
 
 <a name="achievements"></a>
@@ -41,7 +41,7 @@ redirect_from:
 <div class="homepage-section">
 <h2>🎓 Education</h2>
 <ul>
-  <li><strong>M.S. in Computer Science</strong>, Soongsil University, Seoul, South Korea <span class="date-inline">(Expected Aug 2025)</span><br>
+  <li><strong>M.S. in Computer Science</strong>, Soongsil University, Seoul, South Korea <span class="date-inline">(2023--2025)</span><br>
   GPA: 4.16/4.5<br>
   Researcher at System Software Lab under Prof. Jaeyong Choi<br>
   Thesis: Diffusion-Driven Image Generation with Disentangled Style and Structure-Aware Fidelity</li>
@@ -72,7 +72,7 @@ redirect_from:
 <div class="homepage-section">
 <h2>📚 Projects</h2>
 <p><strong>DK-Font: Diffusion-Driven Multilingual Font Generation with Phonetic Awareness and Iterative Refinement</strong><br>
-Sami Abdul, Jaeyong Choi<br>
+Abdul Sami, Jaeyong Choi<br>
 Tools: PyTorch, Diffusion Models, U‑Net, VGG‑19, ResNet, CLIP</p>
 <ul>
   <li>Developed a diffusion model for font synthesis across Korean, Chinese, and Latin scripts.</li>
@@ -140,10 +140,10 @@ Tools: PyTorch, AlexNet, torchvision</p>
   <li>📧 Email: abdulsamimahar001@gmail.com</li>
   <li>🌐 Portfolio: <a href="https://abdulsami101.github.io">abdulsami101.github.io</a></li>
   <li>📍 Based in Seoul, South Korea</li>
-  <li>💼 Open to PhD opportunities in Europe (Fall 2025)</li>
+  <li>💼 Open to PhD opportunities (Fall 2026 / Fall 2027)</li>
 </ul>
 <br>
 <p>💡 I'm open to collaborations in generative AI and creative deep learning applications. Whether you're working on a new idea, looking for a partner in research, or just curious about fonts and image generation — let’s connect!</p>
-<p>🎯 <strong>Actively seeking PhD positions starting Fall 2025</strong> in Computer Vision, Generative Models, and Multilingual AI. Open to research collaborations and industry roles in generative AI.</p>
+<p>🎯 <strong>Actively seeking PhD positions starting Fall 2026 / Fall 2027</strong> in Computer Vision, Generative Models, and Multilingual AI. Open to research collaborations and industry roles in generative AI.</p>
 <a class="back-to-top" href="#-hi-im-abdul-sami">[Back to Top]</a>
 </div>
