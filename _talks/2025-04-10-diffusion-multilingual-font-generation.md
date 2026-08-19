@@ -2,7 +2,7 @@
 title: "Diffusion Models for Multilingual Font Generation"
 collection: talks
 type: "Invited Talk"
-permalink: /talks/2012-03-01-talk-1
+permalink: /talks/2025-04-10-diffusion-multilingual-font-generation/
 venue: "System Software Lab, Soongsil University"
 date: 2025-04-10
 location: "Seoul, South Korea"

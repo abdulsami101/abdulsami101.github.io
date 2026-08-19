@@ -11,26 +11,39 @@ redirect_from:
 
 <!-- External styling and icon support -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/cv-style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <style>
-  body {
-    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  /* Palette tokens — redefined under [data-theme="dark"] below so the CV page
+     follows the site theme instead of forcing a light card on a dark page. */
+  :root {
+    --cv-accent: #2575fc;
+    --cv-surface: #ffffff;
+    --cv-surface-alt: #f7f9fc;
+    --cv-border: #e5e7eb;
+    --cv-text: #24292f;
+    --cv-text-muted: #57606a;
+    --cv-shadow: rgba(0, 0, 0, 0.08);
+  }
+
+  [data-theme="dark"] {
+    --cv-accent: #6ab0ff;
+    --cv-surface: #1b222c;
+    --cv-surface-alt: #212a36;
+    --cv-border: #33415c;
+    --cv-text: #e6e6e6;
+    --cv-text-muted: #a8b3c1;
+    --cv-shadow: rgba(0, 0, 0, 0.4);
   }
 
   .cv-summary {
-  text-align: justify;
-  text-justify: inter-word;
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-left: 4px solid #2575fc;
-  border-radius: 5px;
-  font-size: 1rem;
-  line-height: 1.6;
-}
+    padding: 1rem 1.25rem;
+    border-left: 3px solid var(--cv-accent);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
   .cv-timeline {
     margin-top: 1rem;
-    border-left: 3px solid #2575fc;
+    border-left: 3px solid var(--cv-accent);
     padding-left: 1.5rem;
   }
 
@@ -47,7 +60,7 @@ redirect_from:
     left: -1.1rem;
     width: 12px;
     height: 12px;
-    background-color: #2575fc;
+    background-color: var(--cv-accent);
     border-radius: 50%;
   }
 
@@ -65,7 +78,7 @@ redirect_from:
 
   .cv-institution {
     font-size: 1rem;
-    color: #555;
+    color: var(--cv-text-muted);
     margin-bottom: 0.3rem;
   }
 
@@ -73,13 +86,13 @@ redirect_from:
   .cv-honors,
   .cv-courses {
     font-size: 0.95rem;
-    color: #333;
+    color: var(--cv-text);
     margin-bottom: 0.2rem;
   }
 
   .cv-date {
     font-size: 0.95rem;
-    color: #888;
+    color: var(--cv-text-muted);
     text-align: right;
     min-width: 120px;
   }
@@ -87,7 +100,7 @@ redirect_from:
   .cv-gpa {
     font-weight: normal;
     font-size: 0.95rem;
-    color: #444;
+    color: var(--cv-text-muted);
   }
 
   .cv-timeline-item {
@@ -103,7 +116,7 @@ redirect_from:
     left: -1.1rem;
     width: 12px;
     height: 12px;
-    background-color: #2575fc;
+    background-color: var(--cv-accent);
     border-radius: 50%;
   }
 
@@ -114,13 +127,13 @@ redirect_from:
 
   .cv-institution {
     font-size: 1rem;
-    color: #444;
+    color: var(--cv-text-muted);
     margin: 0.3rem 0;
   }
 
   .cv-date {
     font-size: 0.95rem;
-    color: #888;
+    color: var(--cv-text-muted);
     text-align: right;
     float: right;
     margin-top: -1.5rem;
@@ -128,10 +141,9 @@ redirect_from:
 
   .cv-job-summary {
     font-size: 0.95rem;
-    color: #333;
+    color: var(--cv-text);
     margin-bottom: 0.5rem;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
   }
 
   .cv-highlights {
@@ -143,11 +155,11 @@ redirect_from:
   .cv-highlights li {
     margin-bottom: 0.4rem;
     font-size: 0.95rem;
-    color: #222;
+    color: var(--cv-text);
   }
 
   .cv-highlights i {
-    color: #2575fc;
+    color: var(--cv-accent);
     margin-right: 0.5rem;
   }
 
@@ -160,15 +172,14 @@ redirect_from:
     margin: 2rem auto;
     float: none;
     padding: 2rem;
-    background-color: white;
+    background-color: var(--cv-surface);
     border-radius: 1rem;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px var(--cv-shadow);
   }
    .cv-job-summary {
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
   font-size: 0.95rem;
-  color: #333;
+  color: var(--cv-text);
   margin-bottom: 0.8rem;
   line-height: 1.6;
 }
@@ -180,12 +191,11 @@ redirect_from:
   }
 
   .cv-highlights li {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     margin-bottom: 0.4rem;
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #222;
+    color: var(--cv-text);
   }
 
   .cv-timeline-item {
@@ -201,7 +211,7 @@ redirect_from:
   left: -0.6rem;
   width: 10px;
   height: 10px;
-  background-color: #2575fc;
+  background-color: var(--cv-accent);
   border-radius: 50%;
 }
 
@@ -213,15 +223,14 @@ redirect_from:
 
 .cv-institution {
   font-size: 1rem;
-  color: #555;
+  color: var(--cv-text-muted);
   margin-bottom: 0.6rem;
 }
 
 .cv-job-summary {
   font-size: 0.95rem;
-  color: #333;
-  text-align: justify;
-  text-justify: inter-word;
+  color: var(--cv-text);
+  text-align: left;
   margin-bottom: 0.8rem;
   line-height: 1.6;
 }
@@ -237,9 +246,8 @@ redirect_from:
   padding-left: 1.8rem;
   margin-bottom: 0.75rem;
   font-size: 0.95rem;
-  color: #222;
-  text-align: justify;
-  text-justify: inter-word;
+  color: var(--cv-text);
+  text-align: left;
   line-height: 1.6;
 }
 
@@ -247,7 +255,7 @@ redirect_from:
   position: absolute;
   top: 0.15rem;
   left: 0;
-  color: #2575fc;
+  color: var(--cv-accent);
   font-size: 1rem;
 }
 
@@ -277,11 +285,11 @@ redirect_from:
 }
 
   .cv-skill-box {
-    background-color: #f9f9f9;
-    border-left: 4px solid #2575fc;
+    background-color: var(--cv-surface-alt);
+    border-left: 4px solid var(--cv-accent);
     padding: 1rem 1.2rem;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 3px 6px var(--cv-shadow);
     transition: transform 0.3s ease;
   }
 
@@ -292,7 +300,7 @@ redirect_from:
   .cv-skill-box h3 {
     margin-bottom: 0.7rem;
     font-size: 1.1rem;
-    color: #333;
+    color: var(--cv-text);
   }
 
   .cv-skill-list {
@@ -304,20 +312,20 @@ redirect_from:
   .cv-skill-list li {
     margin-bottom: 0.4rem;
     font-size: 0.95rem;
-    color: #444;
+    color: var(--cv-text-muted);
   }
 
   .cv-skill-list li i {
-    color: #2575fc;
+    color: var(--cv-accent);
     margin-right: 0.5rem;
   }
 
   .cv-publication-card {
-    background-color: #fdfdfd;
+    background-color: var(--cv-surface-alt);
     padding: 1.2rem;
-    border-left: 4px solid #2575fc;
+    border-left: 4px solid var(--cv-accent);
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px var(--cv-shadow);
     transition: transform 0.3s ease;
   }
 
@@ -335,11 +343,11 @@ redirect_from:
   .cv-publication-title {
     font-size: 1.05rem;
     font-weight: 600;
-    color: #222;
+    color: var(--cv-text);
   }
 
   .cv-publication-link {
-    color: #2575fc;
+    color: var(--cv-accent);
     text-decoration: none;
     font-weight: 600;
   }
@@ -355,21 +363,21 @@ redirect_from:
 
   .cv-publication-meta {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--cv-text-muted);
     margin-bottom: 0.4rem;
   }
 
   .cv-publication-summary {
     font-size: 0.95rem;
-    color: #333;
-    text-align: justify;
+    color: var(--cv-text);
+    text-align: left;
     line-height: 1.6;
     margin-bottom: 0.5rem;
   }
 
   .cv-publication-link-cta a {
     font-size: 0.9rem;
-    color: #2575fc;
+    color: var(--cv-accent);
     text-decoration: none;
   }
 
@@ -385,11 +393,11 @@ redirect_from:
 }
 
   .cv-language-card {
-    background-color: #f5f7fa;
-    border-left: 4px solid #2575fc;
+    background-color: var(--cv-surface-alt);
+    border-left: 4px solid var(--cv-accent);
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px var(--cv-shadow);
     text-align: center;
     transition: transform 0.3s ease;
   }
@@ -401,18 +409,18 @@ redirect_from:
   .cv-language-title {
     font-size: 1.05rem;
     font-weight: 600;
-    color: #333;
+    color: var(--cv-text);
     margin-bottom: 0.3rem;
   }
 
   .cv-language-title i {
     margin-right: 0.4rem;
-    color: #2575fc;
+    color: var(--cv-accent);
   }
 
   .cv-language-fluency {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--cv-text-muted);
   }
 
   .cv-references-grid {
@@ -423,11 +431,11 @@ redirect_from:
   }
 
   .cv-reference-card {
-    background-color: #fdfdfd;
-    border-left: 4px solid #2575fc;
+    background-color: var(--cv-surface-alt);
+    border-left: 4px solid var(--cv-accent);
     padding: 1rem 1.2rem;
     border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 3px 8px var(--cv-shadow);
     transition: transform 0.3s ease;
   }
 
@@ -439,17 +447,17 @@ redirect_from:
     font-size: 1.05rem;
     font-weight: 600;
     margin-bottom: 0.4rem;
-    color: #333;
+    color: var(--cv-text);
   }
 
   .cv-reference-name i {
-    color: #2575fc;
+    color: var(--cv-accent);
     margin-right: 0.5rem;
   }
 
   .cv-reference-detail {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--cv-text-muted);
     line-height: 1.5;
   }
 
@@ -457,26 +465,24 @@ redirect_from:
 
 
   .btn--primary {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
+    background: var(--cv-accent);
+    color: #fff;
     border: none;
   }
 
   .btn--primary:hover {
-    background: linear-gradient(to right, #2575fc, #6a11cb);
-    transform: scale(1.05);
+    filter: brightness(0.92);
   }
 
   .btn--inverse {
-    background-color: #ffffff;
-    border: 2px solid #2575fc;
-    color: #2575fc;
+    background-color: transparent;
+    border: 1px solid var(--cv-accent);
+    color: var(--cv-accent);
   }
 
   .btn--inverse:hover {
-    background-color: #2575fc;
-    color: white;
-    transform: scale(1.05);
+    background-color: var(--cv-accent);
+    color: #fff;
   }
 </style>
 

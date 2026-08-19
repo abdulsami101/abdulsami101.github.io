@@ -299,17 +299,6 @@
 .talk-excerpt {
   margin-top: 0.5rem;
   color: #444;
-  font-style: italic;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.talkmap-link {
-  background: #eef3ff;
-  padding: 0.8rem 1rem;
-  border-left: 4px solid #2a7ae2;
-  border-radius: 5px;
-  margin-bottom: 2rem;
 }
 
 /* Teaching Section */
@@ -373,8 +362,7 @@
   margin-top: 0.5rem;
   color: #444;
   font-style: italic;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
 }
 
 /* Portfolio Section */
@@ -503,49 +491,36 @@
   color: #222;
 }
 
-/* Homepage section styles */
-.homepage-section {
-  margin-bottom: 3rem;
+/* Homepage styles */
+.page__content .lead {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #24292f;
+  margin-bottom: 1.5rem;
 }
 
-.tagline {
-  font-size: 1.05rem;
-  line-height: 1.9;
-  padding: 1rem 1.25rem;
-  border-left: 4px solid #2a7ae2;
-  background: #f5f9ff;
-  border-radius: 6px;
-  text-align: left !important;
+.page-actions {
+  margin: 2rem 0 2.5rem;
 }
 
-.homepage-section h2 {
-  border-left: 4px solid #2a7ae2;
-  padding-left: 1rem;
-  font-size: 1.5rem;
-  color: #2a7ae2;
-  margin-bottom: 1rem;
+.page-actions .btn {
+  margin: 0 0.5rem 0.5rem 0;
 }
 
-.homepage-section p,
-.homepage-section li {
-  text-align: justify;
-}
-
-.homepage-section ul {
-  padding-left: 1.5rem;
+/* Section rules on prose pages only — skip headings that carry their own class
+   (e.g. .pub-category-title, which already has a divider of its own). */
+.page__content h2:not([class]) {
+  margin-top: 2.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
 }
 
 .date-inline {
-  font-style: italic;
-  color: #666;
+  color: #6b7280;
   font-size: 0.9rem;
-}
-
-.back-to-top {
-  display: inline-block;
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #2a7ae2;
+  font-weight: 400;
 }
 
 /* ==========================================================================
@@ -563,11 +538,9 @@
 
 [data-theme="dark"] .cv-header h1,
 [data-theme="dark"] .cv-section h2,
-[data-theme="dark"] .homepage-section h2,
 [data-theme="dark"] .cv-profile-item a,
 [data-theme="dark"] .talk-title,
-[data-theme="dark"] .teaching-title,
-[data-theme="dark"] .back-to-top {
+[data-theme="dark"] .teaching-title {
   color: #6ab0ff;
 }
 
@@ -617,14 +590,11 @@
   color: #6ab0ff;
 }
 
-/* Callout boxes */
-[data-theme="dark"] .talkmap-link {
-  background: #1d2a44;
+/* Homepage prose */
+[data-theme="dark"] .page__content .lead {
+  color: #e6e6e6;
 }
 
-[data-theme="dark"] .tagline {
-  background: #1d2a44;
-  border-left-color: #6ab0ff;
+[data-theme="dark"] .page__content h2:not([class]) {
+  border-bottom-color: #333;
 }
-
-

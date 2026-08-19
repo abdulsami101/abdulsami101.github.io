@@ -1,37 +1,30 @@
 ---
 layout: archive
-title: "🎤 Talks & Presentations"
+title: "Talks"
 permalink: /talks/
 author_profile: true
 ---
 
-<link rel="stylesheet" href="{{ "/assets/css/cv-style.css" | relative_url }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-{% if site.talkmap_link == true %}
-<p class="talkmap-link">
-  <a href="/talkmap.html"><i class="fas fa-map-marked-alt"></i> See a map of all the places I've given a talk!</a>
-</p>
-{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/cv-style.css' | relative_url }}">
 
 <div class="talks-grid">
   {% for post in site.talks reversed %}
     <div class="talk-card">
-      <div class="talk-header" style="display: flex; justify-content: space-between; align-items: baseline;">
+      <div class="talk-header">
         <h3 class="talk-title">
-          <i class="fas fa-microphone"></i>
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h3>
-        <span class="talk-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <span class="talk-date">{{ post.date | date: "%B %-d, %Y" }}</span>
       </div>
 
       <div class="talk-meta">
-        {% if post.venue %}<p><strong>Venue:</strong> {{ post.venue }}</p>{% endif %}
-        {% if post.location %}<p><strong>Location:</strong> {{ post.location }}</p>{% endif %}
+        {% if post.type %}<p><strong>Type</strong> · {{ post.type }}</p>{% endif %}
+        {% if post.venue %}<p><strong>Venue</strong> · {{ post.venue }}</p>{% endif %}
+        {% if post.location %}<p><strong>Location</strong> · {{ post.location }}</p>{% endif %}
       </div>
 
       {% if post.excerpt %}
-        <p class="talk-excerpt">{{ post.excerpt }}</p>
+        <p class="talk-excerpt">{{ post.excerpt | strip_html | strip_newlines }}</p>
       {% endif %}
     </div>
   {% endfor %}

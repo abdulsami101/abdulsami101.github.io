@@ -1,0 +1,15 @@
+{% assign post = include.post %}
+<div class="pub-entry">
+  <div class="pub-title">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </div>
+  <div class="pub-meta">
+    <span class="pub-venue">{{ post.venue }}</span> · <span class="pub-date">{{ post.date | date: "%B %Y" }}</span>
+  </div>
+  {% if post.excerpt %}<p class="pub-excerpt">{{ post.excerpt | strip_html }}</p>{% endif %}
+  <div class="pub-links">
+    {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-btn" target="_blank" rel="noopener">Paper</a>{% endif %}
+    {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-btn" target="_blank" rel="noopener">Slides</a>{% endif %}
+    {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="pub-btn" target="_blank" rel="noopener">BibTeX</a>{% endif %}
+  </div>
+</div>

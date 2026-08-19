@@ -1,32 +1,28 @@
 ---
 layout: archive
-title: "📚 Teaching Experience"
+title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
 
-<link rel="stylesheet" href="{{ "/assets/css/cv-style.css" | relative_url }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-{% include base_path %}
+<link rel="stylesheet" href="{{ '/assets/css/cv-style.css' | relative_url }}">
 
 <div class="teaching-grid">
   {% for post in site.teaching reversed %}
     <div class="teaching-card">
       <div class="teaching-header">
         <h3 class="teaching-title">
-          <i class="fas fa-chalkboard"></i>
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h3>
         <span class="teaching-date">{{ post.date | date: "%B %Y" }}</span>
       </div>
       <div class="teaching-meta">
-        {% if post.type %}<p><strong>Type:</strong> {{ post.type }}</p>{% endif %}
-        {% if post.venue %}<p><strong>Venue:</strong> {{ post.venue }}</p>{% endif %}
-        {% if post.location %}<p><strong>Location:</strong> {{ post.location }}</p>{% endif %}
+        {% if post.type %}<p><strong>Type</strong> · {{ post.type }}</p>{% endif %}
+        {% if post.venue %}<p><strong>Venue</strong> · {{ post.venue }}</p>{% endif %}
+        {% if post.location %}<p><strong>Location</strong> · {{ post.location }}</p>{% endif %}
       </div>
       {% if post.excerpt %}
-        <p class="teaching-excerpt">{{ post.excerpt }}</p>
+        <p class="teaching-excerpt">{{ post.excerpt | strip_html | strip_newlines }}</p>
       {% endif %}
     </div>
   {% endfor %}

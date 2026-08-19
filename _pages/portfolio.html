@@ -1,23 +1,21 @@
 ---
 layout: archive
-title: "🧩 Portfolio"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
 ---
 
-<link rel="stylesheet" href="{{ "/assets/css/cv-style.css" | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/cv-style.css' | relative_url }}">
 
-{% include base_path %}
-
-Welcome to my project showcase! Below you'll find a selection of my research work, hands-on experiments, and generative model projects. These highlight my passion for computer vision, AI, and creative applications of deep learning.
+<p class="lead">Selected research projects and applied work in generative modelling, computer vision, and edge deployment.</p>
 
 <div class="portfolio-grid">
   {% for post in site.portfolio %}
     <div class="portfolio-card">
       <a href="{{ post.url | relative_url }}">
-        {% if post.excerpt contains '<img' %}
+        {% if post.thumbnail %}
           <div class="portfolio-thumb">
-            {{ post.excerpt | markdownify }}
+            <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
           </div>
         {% endif %}
         <div class="portfolio-info">

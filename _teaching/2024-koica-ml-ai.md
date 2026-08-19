@@ -2,9 +2,9 @@
 title: "Machine Learning & Artificial Intelligence for KOICA Scholars"
 collection: teaching
 type: "Graduate course"
-permalink: /teaching/2025-koica
-venue: "Soongsil University, Graduate school of Information Technology"
-date: 2024-09-2
+permalink: /teaching/koica-ml-ai/
+venue: "Soongsil University, Graduate School of Information Technology"
+date: 2024-09-02
 location: "Seoul, South Korea"
 ---
 
